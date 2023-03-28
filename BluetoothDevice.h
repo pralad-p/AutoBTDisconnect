@@ -11,6 +11,7 @@
 class BluetoothDevice {
 public:
     explicit BluetoothDevice(const BluetoothRadio &radio);
+
     [[nodiscard]] bool IsConnected(const std::wstring &deviceName) const;
 
 private:

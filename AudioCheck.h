@@ -8,8 +8,10 @@
 #include <Audioclient.h>
 #include <Mmdeviceapi.h>
 #include <Audiopolicy.h>
+
 #pragma comment(lib, "Ole32.lib")
 #pragma comment(lib, "Avrt.lib")
+
 bool isAudioPlaying();
 
 #endif //AUTOBTDISCONNECT_AUDIOCHECK_H

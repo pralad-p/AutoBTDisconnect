@@ -10,19 +10,20 @@
 #include <BluetoothApis.h>
 #include <string>
 #include <stdexcept>
+
 #pragma comment(lib, "Bthprops.lib")
 
 class BluetoothRadio {
 public:
     BluetoothRadio();
+
     ~BluetoothRadio();
+
     HANDLE GetHandle() const;
 
 private:
     HANDLE m_hRadio;
 };
-
-
 
 
 #endif //AUTOBTDISCONNECT_BLUETOOTHRADIO_H
