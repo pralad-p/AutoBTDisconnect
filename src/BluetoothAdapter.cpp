@@ -3,7 +3,7 @@
 //
 
 
-#include "BluetoothAdapter.h"
+#include "../include/BluetoothAdapter.h"
 
 
 void reconnectBluetoothAdapter(const std::string &scriptLocation) {

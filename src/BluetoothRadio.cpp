@@ -2,7 +2,7 @@
 // Created by prlpr on 24/03/2023.
 //
 
-#include "BluetoothRadio.h"
+#include "../include/BluetoothRadio.h"
 
 BluetoothRadio::BluetoothRadio() {
     BLUETOOTH_FIND_RADIO_PARAMS radioParams = {sizeof(BLUETOOTH_FIND_RADIO_PARAMS)};

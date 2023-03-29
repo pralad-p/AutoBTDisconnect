@@ -2,7 +2,7 @@
 // Created by prlpr on 24/03/2023.
 //
 
-#include "BluetoothDevice.h"
+#include "../include/BluetoothDevice.h"
 
 BluetoothDevice::BluetoothDevice(const BluetoothRadio &radio) : m_radio(radio) {}
 

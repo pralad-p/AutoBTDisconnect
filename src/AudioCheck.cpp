@@ -2,7 +2,7 @@
 // Created by prlpr on 24/03/2023.
 //
 
-#include "AudioCheck.h"
+#include "../include/AudioCheck.h"
 
 bool isAudioPlaying() {
     CoInitialize(nullptr);
