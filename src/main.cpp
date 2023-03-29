@@ -50,7 +50,6 @@ int main(int argc, char* argv[]) {
                     if (currentTime - startTime >= noAudioThreshold) {
                         reconnectBluetoothAdapter(script_location);
                         std::cout << "Bluetooth adapter disabled.\n";
-                        exit(0);
                     }
                 }
                 std::this_thread::sleep_for(std::chrono::minutes(1));
