@@ -53,7 +53,7 @@ int main(int argc, char* argv[]) {
                         exit(0);
                     }
                 }
-                std::this_thread::sleep_for(std::chrono::minutes(3));
+                std::this_thread::sleep_for(std::chrono::minutes(1));
             } else {
                 std::this_thread::sleep_for(std::chrono::minutes(10));
             }
