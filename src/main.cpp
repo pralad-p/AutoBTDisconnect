@@ -45,7 +45,7 @@ int main(int argc, char* argv[]) {
                 } else {
                     currentTime = std::chrono::steady_clock::now();
                     auto diff = currentTime - startTime;
-                    std::cout << "Current gap: " << std::chrono::duration_cast<std::chrono::seconds>(diff).count()
+                    std::cout << "Current gap: " << std::chrono::duration_cast<std::chrono::minutes>(diff).count()
                               << "\n";
                     if (currentTime - startTime >= noAudioThreshold) {
                         reconnectBluetoothAdapter(script_location);
