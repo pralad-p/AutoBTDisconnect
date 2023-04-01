@@ -8,7 +8,7 @@ set idle time. Developed in C++, it uses Windows Bluetooth and Core Audio APIs w
 [Features](#features)<br>
 [Use-Case](#use-case)<br>
 [Requirements](#requirements)<br>
-Installation<br>
+[Installation](#installation)<br>
 [Usage](#usage)<br>
 [License](#license)<br>
 
