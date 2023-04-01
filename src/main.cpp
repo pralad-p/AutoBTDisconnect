@@ -8,7 +8,7 @@
 #include "AudioCheck.h"
 #include "BluetoothAdapter.h"
 
-#define DEBUG true
+#define DEBUG false
 
 /*!
  * @brief Entry point for main program
@@ -69,17 +69,17 @@ int main(int argc, char *argv[]) {
             if (device.IsConnected(device_name)) {
                 if (isAudioPlaying()) {
                     startTime = std::chrono::steady_clock::now();
-                    if (DEBUG) std::cout << "Audio still playing. \n";
+                    if (DEBUG) { std::cout << "Audio still playing." << std::endl; }
                 } else {
                     currentTime = std::chrono::steady_clock::now();
                     auto diff = currentTime - startTime;
                     if (DEBUG) {
                         std::cout << "Current gap: " << std::chrono::duration_cast<std::chrono::minutes>(diff).count()
-                                  << "\n";
+                                  << std::endl;
                     }
                     if (currentTime - startTime >= noAudioThreshold) {
                         reconnectBluetoothAdapter(script_location);
-                        if (DEBUG) std::cout << "Bluetooth adapter disabled.\n";
+                        if (DEBUG) { std::cout << "Bluetooth adapter disabled." << std::endl; }
                     }
                 }
                 std::this_thread::sleep_for(std::chrono::minutes(1));
