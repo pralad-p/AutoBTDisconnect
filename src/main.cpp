@@ -8,14 +8,18 @@
 #include "AudioCheck.h"
 #include "BluetoothAdapter.h"
 
+/*!
+ * @brief Entry point for main program
+ * @param argc number of CLI arguments
+ * @param argv array of CLI arguments
+ * @return Status code for good (or bad) exit
+ */
 int main(int argc, char* argv[]) {
     try {
-        // Parse the command-line arguments
         std::vector<std::string> args(argv, argv + argc);
         // Remove the first argument, which is the program name
         args.erase(args.begin());
 
-        // Look for -n and -s flags and their arguments
         std::string deviceName;
         std::string script_location;
         for (auto it = args.begin(); it != args.end(); ++it) {
