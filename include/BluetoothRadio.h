@@ -19,10 +19,10 @@ public:
 
     ~BluetoothRadio();
 
-    HANDLE GetHandle() const;
+    [[nodiscard]] HANDLE GetHandle() const;
 
 private:
-    HANDLE m_hRadio;
+    HANDLE m_hRadio{};
 };
 
 

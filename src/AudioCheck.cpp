@@ -2,8 +2,17 @@
 // Created by prlpr on 24/03/2023.
 //
 
-#include "../include/AudioCheck.h"
+#include "AudioCheck.h"
 
+/*!
+ * @brief Checks if any audio is currently playing on the system.
+ * This method initializes COM, retrieves the default audio endpoint,
+ * activates an audio session manager, and enumerates audio sessions
+ * to check if any of them are currently playing audio.
+ * It returns a boolean value indicating whether or not
+ * audio is currently playing.
+ * @return True if audio is currently playing, false otherwise.
+ */
 bool isAudioPlaying() {
     CoInitialize(nullptr);
 
